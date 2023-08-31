@@ -22,14 +22,12 @@ const mobileMenuOpen = ref(false);
       class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
       aria-label="Global"
     >
-      <div class="flex lg:flex-1">
-        <NuxtLink href="#" class="-m-1.5 p-1.5">
-          <span class="sr-only">Your Company</span>
-          <h4 class="flex items-center text-2xl font-bold">
-            mensa<span class="text-violet-600">.rs</span>
-          </h4>
-        </NuxtLink>
-      </div>
+      <NuxtLink href="#" class="-m-1.5 flex flex-1 items-center p-1.5">
+        <span class="sr-only">Your Company</span>
+        <h4 class="flex items-center text-2xl font-bold">
+          mensa<span class="text-violet-600">.rs</span>
+        </h4>
+      </NuxtLink>
       <div class="flex lg:hidden">
         <button
           type="button"
