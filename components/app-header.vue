@@ -3,7 +3,7 @@ import { Dialog, DialogPanel } from "@headlessui/vue";
 import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
 
 const navigation = [
-  { name: "Glavna", href: "/" },
+  //   { name: "Glavna", href: "/" },
   { name: "Testiranje", href: "#" },
   { name: "Aktivnosti", href: "#" },
   { name: "Clanovi", href: "#" },
@@ -19,7 +19,7 @@ const mobileMenuOpen = ref(false);
 <template>
   <header class="fixed inset-x-0 top-0 z-50">
     <nav
-      class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-4"
+      class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
       aria-label="Global"
     >
       <div class="flex lg:flex-1">
@@ -51,7 +51,7 @@ const mobileMenuOpen = ref(false);
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <a href="#" class="text-sm leading-6 text-gray-900"
-          >Prijava za clanove <span aria-hidden="true">&rarr;</span></a
+          >Prijava <span aria-hidden="true">&rarr;</span></a
         >
       </div>
     </nav>
@@ -93,11 +93,11 @@ const mobileMenuOpen = ref(false);
               >
             </div>
             <div class="py-6">
-              <a
+              <NuxtLink
                 href="#"
                 class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >Prijava za clanove</a
-              >
+                >Prijava
+              </NuxtLink>
             </div>
           </div>
         </div>
